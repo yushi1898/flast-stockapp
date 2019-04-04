@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+         {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <div class="form-group">
+                    {{ form.ticker.label(class="form-control-label") }}
+                    {{ form.ticker(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-check">
+                    {{ form.cp_Flag(class="form-check-input") }}
+                    {{ form.cp_Flag.label(class="form-check-label") }}
+                </div>
+                <div class="form-check">
+                    {{ form.acp_Flag(class="form-check-input") }}
+                    {{ form.acp_Flag.label(class="form-check-label") }}
+                </div>
+                <div class="form-check">
+                    {{ form.op_Flag(class="form-check-input") }}
+                    {{ form.op_Flag.label(class="form-check-label") }}
+                </div>
+                <div class="form-check">
+                    {{ form.aop_Flag(class="form-check-input") }}
+                    {{ form.aop_Flag.label(class="form-check-label") }}
+                </div>                                                
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+{% endblock content %}
