@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from flask import flask, render_template, request, url_for,redirect
+from flask import Flask, render_template, request, url_for,redirect
 from stocklookup import plotstockprice
 from bokeh.embed import components
 
