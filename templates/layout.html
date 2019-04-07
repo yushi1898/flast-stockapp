@@ -10,6 +10,16 @@
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
 
+    <link
+        href="http://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.css"
+        rel="stylesheet" type="text/css">
+    <link
+        href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.4.min.css"
+        rel="stylesheet" type="text/css">
+    
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.4.min.js"></script>
+
     {% if title %}
         <title>Graph of {{tickername}} Data</title>
     {% else %}
@@ -34,11 +44,11 @@
         </div>
       </nav>
     </header>
-    <div class="container">
+
 
           {% block content %}{% endblock %}
 
-    </div>
+
 
 
     <!-- Optional JavaScript -->
