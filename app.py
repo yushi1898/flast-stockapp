@@ -25,7 +25,7 @@ def graph():
     if request.method == 'GET':
         plot = plotstockprice(app.vars['plotitem'],app.vars['ticker'])
         script, div = components(plot)
-        return render_template('graph.html',script = script, div = div)
+        return render_template('graph.html',script = script, div = div,title=app.vars['ticker'])
     
     
     
